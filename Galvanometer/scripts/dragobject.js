@@ -188,7 +188,7 @@ function onRightAnswer(id)
   drag_currentQuestionId += 1;
   question_chances[id]=question_chances[id]-1;
   addScore(dragdrop_getQuestionId(id),3-question_chances[id]);
-  SetActive(welldoneId,true,0.1);
+  SetActive(welldoneId,true,0.05);
   PlayVO2('#welldone');
   setTimeout(disablewelldonettyagain,2000);
   enableokaftercorrect(id);

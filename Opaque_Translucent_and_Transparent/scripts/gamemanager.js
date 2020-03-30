@@ -122,6 +122,10 @@ function Lance_Transparent() {
     SetActive('#i_NowLookAround', true, 0.1);
     PlayVO2('#p_releaseInst');
 
+    SetActive('#b_Opaque', false);
+    SetActive('#b_Translucent', false);
+    SetActive('#b_Transparent', false);
+
     SetActive('#b_release', true, 1.5);
 
     SetActive('#m_Lance_Transparent_anim', true, .25);
@@ -192,6 +196,9 @@ function b_Release_click() {
         GetEntityById("#b_cube3").setAttribute('radius',0.000005);
 
     }
+    SetActive('#b_Opaque', true);
+    SetActive('#b_Translucent', true);
+    SetActive('#b_Transparent', true);
 }
 
 function b_cube2_click() {
@@ -215,6 +222,10 @@ function Lance_Translucent() {
     PlayVO2('#p_releaseInst');
 
     SetActive('#b_release', true);
+
+    SetActive('#b_Opaque', false);
+    SetActive('#b_Translucent', false);
+    SetActive('#b_Transparent', false);
 
     SetActive('#m_Lance_Translucent_anim', true);
     AnimationMixerPlay('#m_Lance_Translucent_anim');
@@ -248,6 +259,10 @@ function Lance_Opaque() {
     PlayVO2('#p_releaseInst');
 
     SetActive('#b_release', true);
+
+    SetActive('#b_Opaque', false);
+    SetActive('#b_Translucent', false);
+    SetActive('#b_Transparent', false);
 
     SetActive('#m_Lance_Opaque_anim', true);
     AnimationMixerPlay('#m_Lance_Opaque_anim');

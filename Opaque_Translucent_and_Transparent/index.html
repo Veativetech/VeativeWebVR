@@ -27,11 +27,7 @@ sortObjects: true;
 physicallyCorrectLights: true;">
 
 
-    <!-- Controllers -->
-    <a-entity setactive="value:false" gearvr-controls laser-controls="hand: right" id="gvrc" line="color: #00ffff; opacity: 0.75"></a-entity>
-    <a-entity setactive="value:false" daydream-controls laser-controls="hand: right" id="ddc" line="color: #00ffff; opacity: 0.75"></a-entity>
-    <a-entity setactive="value:false" oculus-go-controls laser-controls="hand: right" id="oc" line="color: #00ffff; opacity: 0.75"></a-entity>
-    <!-- /Controllers -->
+
 
     <a-sound id="s_click" src="src: url(sounds/click.mp3)" poolSize=5></a-sound>
     <a-sound id="s_hover" src="src: url(sounds/hover.wav)" poolSize=5></a-sound>
@@ -642,7 +638,15 @@ to the next activity.; align:center; baseline:bottom;  width: 2.8; xOffset:0.0; 
 
 
 
-    <a-entity id="Player" position="0 0 0" animation="property: position; to: -.25 0 -.67 ; enabled:false; dur: 1000; loop: false; easing:linear" animation__1="property: position; to: -.25 0 -2.4 ; enabled:false; dur: 1000; loop: false; easing:linear" animation__2="property: position; to: -.25 0 -2.8 ; enabled:false; dur: 1000; loop: false; easing:linear" animation__3="property: position; to: .55 0 -2 ; enabled:false; dur: 1000; loop: false; easing:linear">
+    <a-entity id="Player" position="0 0 0" animation="property: position; to: -0.25 0 -0.67 ; enabled:false; dur: 1000; loop: false; easing:linear" animation__1="property: position; to: -.25 0 -2.4 ; enabled:false; dur: 1000; loop: false; easing:linear" animation__2="property: position; to: -.25 0 -2.8 ; enabled:false; dur: 1000; loop: false; easing:linear" animation__3="property: position; to: .55 0 -2 ; enabled:false; dur: 1000; loop: false; easing:linear">
+
+
+      <!-- Controllers -->
+      <a-entity setactive="value:false" gearvr-controls laser-controls="hand: right" id="gvrc" line="color: #00ffff; opacity: 0.75"></a-entity>
+      <a-entity setactive="value:false" daydream-controls laser-controls="hand: right" id="ddc" line="color: #00ffff; opacity: 0.75"></a-entity>
+      <a-entity setactive="value:false" oculus-go-controls laser-controls="hand: right" id="oc" line="color: #00ffff; opacity: 0.75"></a-entity>
+      <!-- /Controllers -->
+
 
         <a-camera id="camera" look-controls wasd-controls="ad-enabled:false;ws-enabled:false">
             <a-cursor id="cursor"
